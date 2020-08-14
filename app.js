@@ -1,7 +1,7 @@
 
 function onPageLoad(){
   console.log("Document Loaded");
-  var url="http://lovelgeorge.pythonanywhere.com/get_location_names";
+  var url="https://lovelgeorge.pythonanywhere.com/get_location_names";
   $.get(url,function(data,status){
       console.log("Got response from location request");
      ;
@@ -35,7 +35,7 @@ function getEstimatedPrice(){
   var bathrooms = list[2]
   var location = list[3]
 
-  var url = "http://lovelgeorge.pythonanywhere.com/predict_home_price"; 
+  var url = "https://lovelgeorge.pythonanywhere.com/predict_home_price"; 
   $.post(url,{
       total_sqft:sqft,
       bhk: bhk,
